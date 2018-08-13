@@ -1,12 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kogu Tatoo</title>
+    <title>KOGU TATOOER</title>
+    <!-- materialize css -->
+    <link rel="stylesheet" href="./resources/css/materialize.min.css">
+    <!-- Google material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Fontawesme icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <!--Materialize JS  -->
+    <script src="./resources/js/materialize.min.js"></script>
+    <style>
+        .parallax-container {
+            height: 50vh;
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Kogu Tatoo</h1>
+    <!-- start Navbar -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper black darken-3">
+                <div class="container">
+                    <a href="#!" class="brand-logo">Kogu Tatooer</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                        <span class="fa fa-bars"></span>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="#about-me" class="waves-effect waves-light">Sobre mim
+                                <i style="font-size:30px" class="fa fa-user"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about-me" class="waves-effect waves-light">Portfólio
+                                <i style="font-size:30px" class="fa fa-briefcase"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about-me" class="waves-effect waves-light">Contato
+                                <i style="font-size:30px" class="fa fa-phone"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/kogu_tattooer/" target="_blank" class="waves-effect waves-light">Instagram
+                                <i style="font-size:30px" class="fab fa-instagram"></i>
+                                <span class="ion-social-instagram"></span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <div class="user-view">
+                <div class="background black ">
+                </div>
+                <a href="#user">
+                    <img class="circle" src="./resources/imgs/kogu.jpeg">
+                </a>
+                <a href="#name">
+                    <span class=" white-text name">
+                        <b> Kogu Tatoo </b>
+                    </span>
+                </a>
+                <a href="#email">
+                    <span class="email white-text">
+                        <span class="fa fa-envelope"></span> gleysonkogu@gmail.com</span>
+                </a>
+                <a href="#email">
+                    <span class="email white-text">
+                        <span class="fa fa-map-marker-alt"></span> Brasilia, Brazil</span>
+                </a>
+                <a href="#email">
+                    <span class="email white-text">
+                        <span class="fa fa-phone"></span> +55 (61)9 9945-2247 </span>
+                </a>
+            </div>
+        </li>
+        <li>
+            <a href="#about-me" class="waves-effect waves-light">Sobre mim
+                <i style="font-size:30px" class="fa fa-user"></i>
+
+            </a>
+        </li>
+        <li>
+            <a href="#about-me" class="waves-effect waves-light">Portfólio
+                <i style="font-size:30px" class="fa fa-briefcase"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#about-me" class="waves-effect waves-light">Contato
+                <i style="font-size:30px" class="fa fa-phone"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/kogu_tattooer/" target="_blank" class="waves-effect waves-light">Instagram
+                <i style="font-size:30px" class="fab fa-instagram"></i>
+                <span class="ion-social-instagram"></span>
+            </a>
+        </li>
+
+
+    </ul>
+    <!-- End of the navigation content -->
+
+    <!-- First image -->
+    <div class="parallax-container" style="margin-top: 0%">
+        <div class="parallax">
+            <img class="responsive-img" src="./resources/imgs/background.jpeg">
+        </div>
+    </div>
+    <div class="row" style="margin-top: 0%">
+        <div class="col s12 l12 m12 center-align">
+            <h2 class="black-text">
+                Quem sou eu?
+            </h2>
+            <p class="flow-text black-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis maiores vel, ipsum earum autem deleniti accusantium
+                praesentium perferendis incidunt illum reiciendis error illo voluptas fugiat porro est cumque natus dignissimos.
+            </p>
+            <a href="#about-me" class="fa fa-arrow-down white-text" style="font-size:40px"> </a>
+        </div>
+    </div>
+
+    <div>
+
+    </div>
+    <!-- sidenav script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, {
+                scrollOffset: 0
+            });
+        });
+    </script>
+    <!-- Parallax script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems);
+        });
+    </script>
 </body>
+
 </html>
